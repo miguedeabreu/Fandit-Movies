@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+:root {
+    --azul:     #052754;
+    --amarillo: #F9BC50;
+    --turquesa: #00C6C0;
+    --melon:    #FFF7D6;
+}

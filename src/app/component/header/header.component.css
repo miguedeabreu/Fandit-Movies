@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 11vh;
+    background: var(--azul);
+}
+
+.header_logo {
+    margin-left: 14vw;
+}
+
+.header_buscador {
+    margin-right: 14vw;
+    margin-top: 1.1vw;
+}
