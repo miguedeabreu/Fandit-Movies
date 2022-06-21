@@ -1,17 +1,33 @@
 .header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 11vh;
     background: var(--azul);
+    z-index: 1;
 }
 
 .header_logo {
-    margin-left: 14vw;
+    margin-left: 12vw;
 }
 
-.header_buscador {
-    margin-right: 14vw;
-    margin-top: 1.1vw;
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+    margin-right: 12vw;
+    margin-top: 2.5vh;
+    font-size: 1vw;
+}
+
+.enlace {
+    color: var(--amarillo);
+    text-decoration: none;
+    transition: transform 2s linear;
+}
+
+.enlace:hover{
+    transform: scale(1.1);
 }

@@ -1,0 +1,44 @@
+<section class="pagina_detalle">
+
+  <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" id="id" #id placeholder="Introduce nombre de la película" aria-label="Search">
+      
+      <div *ngIf="id.value == 0; else esFalso">
+  
+        <button 
+          class="btn btn-outline-success"
+          type="reset"
+          on-click=getMovie(id.value)>
+          Buscar
+        </button>
+      
+      </div>
+      
+    </form>
+  </div>
+
+
+  <ng-template #esFalso>
+
+    <div class="card mb-3" style="max-width: 700px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2{{movie.poster_path}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{movie.original_title}}</h5>
+              <h6 class="card-title">{{movie.tagline}}</h6><br>
+              <p class="card-text">Género: {{movie.genres[0].name}}</p>
+              <p class="card-text">Duración: {{movie.runtime}} minutos</p>
+              <p class="card-text">Origen: {{movie.production_countries[0].name}}</p>
+              <p class="card-text">{{movie.overview}}</p>
+              <p class="card-text"><small class="text-muted">Estreno: {{movie.release_date}}</small></p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </ng-template>
+</section>
