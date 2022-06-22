@@ -1,10 +1,22 @@
+.card_cuerpo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5vw;
+    margin-left: 24vw;
+    margin-right: 24vw;
+    margin-bottom: 1.5vw;
+    gap: 60px;
+}
+
 .card_detalle {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 10vw;
     height: 38vh;
-    background: var(--melon);
+    background: var(--amarillo);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
@@ -18,4 +30,5 @@
 .card_titulo {
     font-size: 1.5vh;
     color: var(--azul);
+    margin-left: 8px;
 }
